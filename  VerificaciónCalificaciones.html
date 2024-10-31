@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let calificacion = parseFloat(prompt("Ingrese su calificación (entre 0 y 100):"));
+
+        
+        if (calificacion >= 0 && calificacion <= 100) {
+            if (calificacion >= 90) {
+                console.log("Aprobado con honores");
+                alert("Aprobado con honores");
+            } else if (calificacion >= 70) {
+                console.log("Aprobado");
+                alert("Aprobado");
+            } else {
+                console.log("Reprobado");
+                alert("Reprobado");
+            }
+        } else {
+            console.log("La calificación ingresada no es válida. Debe estar entre 0 y 100.");
+            alert("La calificación ingresada no es válida. Debe estar entre 0 y 100.");
+        }
+
+    </script>
+</body>
+</html>
